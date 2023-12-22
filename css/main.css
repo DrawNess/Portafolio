@@ -1,0 +1,14 @@
+*{
+
+}
+.CardSpace {
+    width: 100%;
+    height: auto;
+    background: green;
+    display: flex;
+    align-items: center;
+}
+.card {
+    width: 80%;
+    height: auto;
+}
