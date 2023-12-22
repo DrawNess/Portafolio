@@ -2,30 +2,44 @@
 margin: 0;
 padding: 0;
 }
-
+html{
+    background: black;
+}
 .CardSpace {
     border-radius: 2rem;
     width: 40rem;
-    height: 56rem;
-    margin: 5rem auto;
+    height: auto;
+    margin: 3rem auto;
     background-color: rgb(24, 21, 21);
+    /* background: rgb(0, 54, 0); */
     color: rgb(240, 240, 240);
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
 }
+.card--background{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.card--profile{
+    width: 10rem;
+    border-radius: 50%;
+    margin-top: -5.5rem;
+    border: 5px solid rgb(21, 21, 24);
+}
 .card__info{
-    width: 80%;
+    width: 70%;
     height: auto;
     text-align: center;
     background-color: rgb(48, 48, 48);
     border-radius: 1rem;
     padding: 2rem;
-    margin: 2rem;
+    margin: 1rem;
 }
 .card__info h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding-bottom: 1rem;
 }
 .Follow {
@@ -36,8 +50,21 @@ padding: 0;
     border-radius: 1rem;
     font-size: 2rem;
     padding: 1rem;
+    margin-bottom: 2rem;
 }
 .Follow a {
     text-decoration: none;
     color: aliceblue;
+}
+@media screen and (max-width: 650px) {
+    .CardSpace {
+        width: 80%;
+    }
+    .card__info h1 {
+        font-size: 2rem;
+    }
+    .card--profile{
+        width: 7rem;
+        margin-top: -4.5rem;
+    }
 }
