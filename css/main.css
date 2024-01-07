@@ -4,13 +4,18 @@ padding: 0;
 }
 html{
     background: black;
+    /* background-color: #ffff72; */
+    /* background-color: #004173; */
+    /* background-color: #0cb7f2; */
 }
 .CardSpace {
     border-radius: 2rem;
-    width: 30rem;
+    width: 35rem;
     height: auto;
     margin: 3rem auto;
     background-color: rgb(24, 21, 21);
+    /* background-color: #f7d547; */
+    /* background-color: #ffffff; */
     /* background: rgb(0, 54, 0); */
     color: rgb(240, 240, 240);
     display: flex;
@@ -33,7 +38,7 @@ html{
     width: 70%;
     height: auto;
     text-align: center;
-    background-color: rgb(48, 48, 48);
+    /* background-color: rgb(48, 48, 48); */
     border-radius: 1rem;
     padding: 2rem;
     margin: 1rem;
@@ -41,6 +46,11 @@ html{
 .card__info h1 {
     font-size: 2.5rem;
     padding-bottom: 1rem;
+    margin-top: -2rem;
+}
+.card__info p {
+    font-size: 1.2rem;
+    /* padding-bottom: 1rem; */
 }
 .Follow {
     width: 80%;
