@@ -90,10 +90,10 @@ nav ul li:hover::after {
         text-align: center;
         display: block;
         margin: 0px;
-        padding: 20px;
     }
     nav ul li a{
-        color: #7c6853;;
+        color: #7c6853;
+        padding: 2rem;
     }
     .mobile{
         display: block;
