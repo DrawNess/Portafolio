@@ -7,6 +7,7 @@
 body{
     /* background: rgb(248, 197, 101); */
     background-color: black;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .container {
@@ -16,37 +17,46 @@ body{
     align-items: center;
     justify-content: center;
 }
-
+.logo-nestor{
+    width: auto;
+}
+.logo-nestor img{
+    width: 10rem;
+}
 nav {
-    width: 95%;
-    background:#7c6853;
-    border-radius: 30px;
-    padding: 30px;
-    margin: 0.5rem;
-    /* box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4); */
-    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.4);
+    width: 100%;
+    background:#9b9b9b;
+    /* background:#7c6853; */
+    /* border-radius: 30px; */
+    padding: 1rem;
+    /* margin: 0.2rem; */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    /* box-shadow: 0 5px 20px rgba(255, 255, 255, 0.4); */
+    display: flex;
 }
 
 nav ul li {
     display: inline-block;
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 0 10px;
     /* margin: 0 20px; */
     /* padding: 1rem; */
+    margin-top: 0.9rem;
     cursor: pointer;
     position: relative;
 }
 nav ul li a{
     text-decoration: none;
     color: black;
+    /* justify-content: center; */
 }
 
 nav ul li:after {
     content: '';
     width: 0;
     height: 3px;
-    background: rgb(245, 120, 4);
+    background: rgb(2, 2, 2);
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -66,7 +76,32 @@ nav ul li:hover::after {
     font-size: 30px;
     display: none;
 }
-@media (max-width:768px){
+/* presetacion caratula */
+.presentation{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.nombre{
+    width: 30%;
+    height: auto;
+    color: wheat;
+}
+.presentation-foto{
+    width: 70%;
+}
+.presentation-foto img{
+    width: 100%;
+}
+@media (max-width:876px){
+    .logo-nestor{
+        width: 100%;
+        
+    }
+   /*  .logo-nestor img{
+        width: auto;
+    } */
     nav{
         width: 100%;
         /* background: #fff; */
@@ -74,6 +109,8 @@ nav ul li:hover::after {
         padding: 0;
         margin: 0;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+        display: block;
+        text-align: center;
     }
     .toggle{
         display: block;
