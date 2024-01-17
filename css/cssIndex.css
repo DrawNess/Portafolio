@@ -95,7 +95,7 @@ nav ul li:hover::after {
 .nombre_cajita{
     width: 100%;
     position: absolute;
-    top: 50%;
+    top: 57%;
     left: 110%;
     transform: translate(-50%, -50%);
     font-size: 30px;
@@ -113,8 +113,7 @@ nav ul li:hover::after {
 }
 @media (max-width:876px){
     .logo-nestor{
-        width: 100%;
-        
+        width: 100%;  
     }
    /*  .logo-nestor img{
         width: auto;
