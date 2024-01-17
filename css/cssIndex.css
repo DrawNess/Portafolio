@@ -50,7 +50,7 @@ nav ul li {
 }
 nav ul li a{
     text-decoration: none;
-    color: black;
+    color: wheat;
     /* justify-content: center; */
 }
 
@@ -58,7 +58,8 @@ nav ul li:after {
     content: '';
     width: 0;
     height: 3px;
-    background: rgb(2, 2, 2);
+    /* background: rgb(2, 2, 2); */
+    background: wheat;
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -151,9 +152,6 @@ nav ul li:hover::after {
     .mobile{
         display: block;
     }
-
-
-    
 }
 @media (max-width:876px){
 
