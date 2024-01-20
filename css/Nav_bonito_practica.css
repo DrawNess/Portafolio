@@ -4,19 +4,27 @@
     padding: 0;
 }
 body {
-    background-color: papayawhip;
+    background-image: url('../img/img_slider/1.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
-    max-height: 100vh;
+    /* max-height: 100vh; */
 }
 
 header {
     padding: .5rem 0.5rem;
-    background-color: #555555;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    /* border: solid black; */
+    box-shadow: 0 10px 40px gray;
     max-width: 80%;
     margin: auto;
+    margin-top: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 30px;
+
 }
 .logo img{
     width: 150px;
@@ -62,7 +70,8 @@ nav a.active, nav a:hover {
         display: grid;
         top: 75px;
         text-align: center;
-        background-color: darkblue;
+        background: transparent;
+        backdrop-filter: blur(10px);
         left: -100%;
         z-index: 1;
         width: 100%;
@@ -70,5 +79,10 @@ nav a.active, nav a:hover {
     #click:checked~nav {
         left: 0%;
         transition: all 0.5s ease;
+    }
+    body{
+        background-size: inherit;
+        /* background-position: right top; */
+        background-position: top right -10px;
     }
 }
