@@ -3,28 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/cssIndex.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <script src="./script/scriptNavBar.js"></script>
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
+        <nav>
+            <div class="logo-nestor">
+                <a href=""><img src="./img/img_logo/NESTOr_Silk .png" alt=""></a>
+            </div>
+            <div class="toggle">
+                <i class="fas fa-bars" onclick="mobile()"></i>
+            </div>
+            <ul id="idMobile">
+                <li><a href="./Identifier.html">INICIO</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">WEBSITES</a></li>
+                <li><a href="">GALLERY</a></li>
+                <li><a href="">3D DESIGN</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </nav>
+       
+    </div>
     
-    <section class="CardSpace">
-        <img class="card--background" src="./img/img_main/fondo 2.jpg" alt="">
-        <img class="card--profile" src="./img/img_main/FotoDePerfil.jpg" alt="">
-        <div class="card__info">
-            <h1>Jhammil Nestor Developer</h1>
-            <p>Hi, I'm Nestor, a passionate frontend developer with a keen 
-                interest in creating user-friendly and visually appealing web 
-                applications. I love turning ideas into interactive and 
-                responsive designs. Let me show you some of my projects!
-            </p>
-            <p>Im also interested int 3D design and photography, you can
-                find all my work in my repo. </p>
+    <section class="presentation">
+        <div class="nombre">
+            <div class="nombre_cajita">
+                <span>MY NAME IS</span>
+                <H1>JHAMMIL NESTOR</H1>
+                <P>I'M WEB DEVELOPER</P>
+            </div>
         </div>
-        <div class="Follow">
-            <a href="">Follow</a>
+        <div class="presentation-foto">
+            <img src="./img/img_fondos/dragon.webp" alt="">
         </div>
     </section>
-
+    <section class="slider-container">
+        <div class="slider-images">
+            <div class="slider-img">
+                <img src="./img/img_slider/1.png" alt="">
+                <h1>Dado</h1>
+                <div class="details">
+                    <h2>Faro</h2>
+                    <p>Faro Luz Azul</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="./img/img_slider/2.png" alt="">
+                <h1>Faro</h1>
+                <div class="details">
+                    <h2>Faro</h2>
+                    <p>Faro estilo Low Poly</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="./img/img_slider/3.png" alt="">
+                <h1>Bolas</h1>
+                <div class="details">
+                    <h2>Faro</h2>
+                    <p>Bolas de cristal</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="./img/img_slider/4.jpg" alt="">
+                <h1>Arbol</h1>
+                <div class="details">
+                    <h2>Arbol</h2>
+                    <p>Imagen a cambiar</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="./img/img_slider/5.png" alt="">
+                <h1>Bolas</h1>
+                <div class="details">
+                    <h2>Bolas 2</h2>
+                    <p>Bolas Caendo</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="./img/img_slider/6.png" alt="">
+                <h1>Reflejo</h1>
+                <div class="details">
+                    <h2>Reflejo</h2>
+                    <p>Reflejo y luz</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="./img/img_slider/7.jpg" alt="">
+                <h1>Dado_Negro</h1>
+                <div class="details">
+                    <h2>Dado Negro</h2>
+                    <p>Negraso el dado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./script/js_slider/jQuery.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+    <footer>
+        <div class="footer-container">
+            <div class="email">
+                <h4>thewhite1012@gmail.com</h4>
+                <p>Jhammil Nestor Calle Canaviri</p>
+            </div>
+            <div class="social-media">
+                <a href=""><img src="./img/img_footer/X.jpg" alt=""></a>
+                <a href=""><img src="./img/img_footer/Insta.jpg" alt=""></a>
+                <a href=""><img src="./img/img_footer/facebook.jpg" alt=""></a>
+                <a href=""><img src="./img/img_footer/linkedin.jpg" alt=""></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
